@@ -1,0 +1,11 @@
+{% macro userinfo(name) %}
+    
+    <strong>{{name}}:</strong>
+    <span id="userInfo{{name}}"></span>
+    <br>
+  
+{% endmacro %}
+
+    {% import 'macro.html' as macro %}
+
+{{macro.userinfo("Yo Yo Yo Yo Yo")}}

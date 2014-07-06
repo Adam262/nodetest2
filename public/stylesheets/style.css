@@ -1,2 +1,8 @@
+#userinfo {
+  border: 1px solid #ddd; }
+
 .table {
   width: 70%; }
+
+form {
+  display: inline-block; }

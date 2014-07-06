@@ -1,15 +1,39 @@
 {% extends "layout.html" %}
 
-{% block content %}
+{% block header %}
     <h1>{{title}}</h1>
     {#<p>Welcome to {{title}}</p>#}
+{% endblock%}
 
+{% block userlist%}
 <div class="container">
   <div class="row">
     <div class = 'col-lg-4 col-md-4' id="userinfo">
       <h2> User Info</h2>
+        <p>
+
+          <strong>Name:</strong>
+          <span id="userInfoName"></span>
+          <br>
+
+          <strong>Age:</strong>
+          <span id="userInfoAge"></span>
+          <br>
+
+          <strong>Gender:</strong>
+          <span id="userInfoGender"></span>
+          <br>
+
+          <strong>Location:</strong>
+          <span id="userInfoLocation"></span>
+          <br>
+
+        </p>
     </div>
 
+{% endblock %}
+
+{% block table%}
     <div class = 'col-lg-8 col-md-8'>
     <table class = 'table table-bordered' id = 'userlist'>
       <h2>User List</h2> 
@@ -28,3 +52,30 @@
 </div> 
 
 {% endblock %}
+
+{% block form %}
+<div class="container">
+<div class = 'row'>
+<div class = 'col-lg-4 col-md-4' ></div>
+<div class = 'col-lg-8 col-md-8'>
+ <h2>Add User</h2>   
+<form role = 'form'>
+  <input id="inputUserName" type ='text' placeholder = 'Username'>
+  <input id="inputUserEmail" type ='text' placeholder = 'Email'>
+  <br>
+  <input id="inputUserFullname" type ='text' placeholder = 'Full Name'>
+  <input id="inputUserAge" type ='text' placeholder = 'Age'>
+  <br>
+  <input id="inputUserLocation" type ='text' placeholder = 'Location'>
+  <input id="inputUserGender" type ='text' placeholder = 'gender'>
+  <br>
+  <button id="btnAddUser" class = 'btn btn-primary'>+</button>
+</form>
+</div>
+</div>
+</div>
+
+{% endblock%}
+
+
+
