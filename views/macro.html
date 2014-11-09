@@ -1,11 +1,12 @@
-{% macro userinfo(name) %}
+{% macro userinfo(key) %}
     
-    <strong>{{name}}:</strong>
-    <span id="userInfo{{name}}"></span>
+    <strong>{{key}}:</strong>
+    <span id="userInfo{{key}}"></span>
     <br>
   
 {% endmacro %}
 
+
     {% import 'macro.html' as macro %}
 
-{{macro.userinfo("Yo Yo Yo Yo Yo")}}
+    {{macro.userinfo(Name)}}

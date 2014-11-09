@@ -48,7 +48,7 @@ var populateTable = function() {
       
         };
 
-      // Show User Info
+
 
  // Add User
 var addUser = function (event) {

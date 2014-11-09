@@ -4,12 +4,14 @@
     <title></title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
 
   </head>
   <body>
+    <nav class = 'nav navbar-inverse'>
      {% block header %}{% endblock %}
+     </nav>
     {% block userlist %}{% endblock %}
     {% block table %}{% endblock %}
     {% block form%} {% endblock%}
