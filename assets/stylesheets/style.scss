@@ -1,6 +1,27 @@
+a {
+  color: black;
+}
+
+.linkdeleteuser {
+    color: red;
+  }
+
+nav {
+  h1 {
+    color: white;
+  margin: 1%;
+  text-align: center;
+  }
+}
+
 .navbar {
   margin: 0 0 100px 0;
 }
+
+.navbar-inverse {
+background-color: #2f6405;
+}
+
 #userinfo {
   border: 1px solid #ddd;
 }
